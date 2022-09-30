@@ -15,10 +15,10 @@
  */
 struct binary_tree_s
 {
-        int n;
-        struct binary_tree_s *parent;
-        struct binary_tree_s *left;
-        struct binary_tree_s *right;
+	int n;
+	struct binary_tree_s *parent;
+	struct binary_tree_s *left;
+	struct binary_tree_s *right;
 };
 
 typedef struct binary_tree_s binary_tree_t;
@@ -28,15 +28,15 @@ typedef struct binary_tree_s heap_t;
 
 
 /**
- * struct levelorder_queue_s - Level order traversal queue.
- * @node: A node of a binary tree.
- * @next: The next node to traverse to in the binary tree.
+ * struct node_s - singly linked list
+ * @node: const binary tree node
+ * @next: points to the next node
  */
-typedef struct levelorder_queue_s
+typedef struct node_s
 {
 	const binary_tree_t *node;
-	struct levelorder_queue_s *next;
-} levelorder_queue_t;
+	struct node_s *next;
+} ll;
 
 
 
